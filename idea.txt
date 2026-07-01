@@ -1,0 +1,44 @@
+Phần 1: Cấu trúc nền tảng (Base Setup)
+Đây là phần đầu tiên cần push lên để làm móng, thường do trưởng nhóm hoặc người phụ trách Backend làm
+
+Task 1: Tạo cấu hình server và kết nối Database
+Nội dung: Viết code khởi tạo server (ví dụ: Node.js/Express, Python/FastAPI), kết nối đến cơ sở dữ liệu (MongoDB, MySQL...). 
+Chưa viết logic gì cả.Commit Message ví dụ: feat: setup server and database connection
+
+Task 2: Định nghĩa mô hình dữ liệu người dùng (User Model/Schema)
+Nội dung: Tạo file cấu trúc bảng dữ liệu User trong code (gồm các trường: email, password, refresh_token...).
+Commit Message ví dụ: feat: create User schema with email and password fields
+
+Phần 2: Xử lý dữ liệu đầu vào (Validation & Security)
+
+Phần này tập trung vào việc chặn rác và bảo mật dữ liệu trước khi đối chiếu.
+Task 3: Viết tầng kiểm tra dữ liệu đầu vào (Login Validation)
+Nội dung: Sử dụng các thư viện như Zod hoặc Joi để viết một middleware/hàm kiểm tra dữ liệu từ Postman gửi lên. 
+Nếu thiếu email hoặc password không đúng định dạng, trả về lỗi 400 Bad Request.
+Commit Message ví dụ: feat: add request validation login middleware
+Task 4: Tích hợp thư viện mã hóa mật khẩu
+Nội dung: Cài đặt và cấu hình thư viện bcrypt. 
+Viết hàm phụ trợ (helper function) để so sánh mật khẩu người dùng nhập với mật khẩu đã băm trong database.
+Commit Message ví dụ: feat: integrate bcrypt for password comparison
+
+Phần 3: Xử lý Logic cốt lõi (Core Authentication Logic)
+Đây là lúc xử lý "bộ não" của tính năng đăng nhập.
+
+Task 5: Xử lý logic kiểm tra tài khoản (Authentication Handler)
+Nội dung: Tìm User theo Email trong database. 
+Nếu không thấy hoặc so sánh mật khẩu bằng bcrypt thất bại $\rightarrow$ 
+Trả về mã lỗi 401 Unauthorized.Commit Message ví dụ: feat: implement login authentication logic and 401 error error response
+Task 6: Cấu hình và tạo cặp Token (Access Token & Refresh Token)Nội dung: Cài đặt thư viện jsonwebtoken (JWT). 
+Viết hàm sinh ra accessToken (hết hạn ngắn) và refreshToken (hết hạn dài).
+Commit Message ví dụ: feat: generate JWT access token and refresh token upon successful login
+Task 7: Lưu Refresh Token vào Database
+Nội dung: Cập nhật lại logic đăng nhập: 
+Khi đăng nhập thành công, ngoài việc trả token về cho khách, hệ thống phải lưu chuỗi refreshToken đó vào bản ghi của User trong database.
+Commit Message ví dụ: feat: save refresh token to database for session management
+
+Phần 4: Hoàn thiện Response và kiểm thử (Finalizing & Testing)
+Chuẩn hóa đầu ra trước khi bàn giao cho Frontend.
+Task 8: Chuẩn hóa cấu trúc JSON trả về (Format Response)
+Nội dung: Gói gọn dữ liệu trả về theo đúng thiết kế 
+(Status code 200, chuỗi message thành công, object chứa cặp token).
+Commit Message ví dụ: style: format login success response with access and refresh tokens
