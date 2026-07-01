@@ -1,6 +1,6 @@
-package exam;
+package examPractice;
 import java.util.Scanner;
-public class two {
+public class pj2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.printf("Enter your age:");
