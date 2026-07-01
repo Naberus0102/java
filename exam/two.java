@@ -8,5 +8,6 @@ public class two {
         System.out.printf("Enter your name:");
         String name = scanner.next();
         System.out.printf("I am %d years old and my name is %s%n", age, name);
+        scanner.close();
     }
 }

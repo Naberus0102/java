@@ -1,5 +1,4 @@
 # Quy Trình Phát Triển Tính Năng Xác Thực Cơ Bản (Spring Boot + PostgreSQL + JWT)
-
 ## Phần 1: Nền tảng và Cơ sở dữ liệu (Base Setup & Database)
 
 ### Task 1: Khởi tạo dự án (Project Initialization)
