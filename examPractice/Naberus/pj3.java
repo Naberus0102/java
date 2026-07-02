@@ -1,6 +1,6 @@
-package exam;
+package examPractice;
 import java.util.Scanner;
-public class three {
+public class pj3 {
     public static void main(String[] args) {
     int a,b;
     Scanner scanner = new Scanner(System.in);
