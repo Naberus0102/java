@@ -1,6 +1,6 @@
-package examPractice.Naberus;
+package examPractice.Naberus.Beginner;
 import java.util.Scanner;
-public class lab01 {
+public class lab01_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your score: ");

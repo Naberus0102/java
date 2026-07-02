@@ -1,4 +1,4 @@
-package examPractice.Naberus;
+package examPractice.Naberus.Beginner;
 public class pj4 {
     public static void main(String[] args) {
         // math functions
