@@ -1,0 +1,4 @@
+ Kế thừa và Đa hình - Quan trọng
+
+    Interface: Spring Data JPA dựa hoàn toàn vào Interface. Bạn kế thừa JpaRepository để thực hiện các thao tác database mà không cần viết code truy vấn thủ công (16:47).
+    Tính đa hình: Spring Security sử dụng cơ chế này thông qua việc implement các interface như UserDetailsService để tùy biến logic xác thực (18:04).

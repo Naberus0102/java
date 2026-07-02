@@ -1,0 +1,7 @@
+Lập trình hướng đối tượng (OOP) - Rất quan trọng
+
+Đây là nền tảng của Spring Boot.
+
+    Class và Object: Bạn sẽ tạo các lớp như MyAppUser (Model) để đại diện cho người dùng.
+    Encapsulation (Đóng gói): Việc sử dụng private cho thuộc tính và getter/setter là bắt buộc để Hibernate/JPA có thể ánh xạ dữ liệu với cơ sở dữ liệu (14:12).
+    Constructor: Cần thiết cho việc khởi tạo các đối tượng Entity.
