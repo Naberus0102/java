@@ -1,0 +1,4 @@
+Cấu trúc dữ liệu và xử lý chuỗi - Quan trọng
+
+    Xử lý chuỗi (String): Bạn cần xử lý các đường dẫn URL, định dạng dữ liệu truyền đi (JSON), và quan trọng nhất là xử lý mật khẩu đã mã hóa (BCrypt).
+    Non-primitive data types: Các kiểu dữ liệu như Long (cho ID) hoặc String là cốt lõi để lưu trữ thông tin user trong Model (14:49).
