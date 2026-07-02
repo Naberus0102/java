@@ -1,4 +1,0 @@
-Xử lý ngoại lệ và nâng cao - Rất quan trọng
-
-    Quản lý gói (Package): Cực kỳ quan trọng trong Spring Boot để tổ chức code theo kiến trúc MVC: controller, model, repository, security, service (8:39, 12:12, 14:18).
-    Xử lý ngoại lệ (Try-catch/Throw): Spring giúp bạn ném các ngoại lệ như UsernameNotFoundException để xử lý lỗi đăng nhập một cách chuyên nghiệp (19:03).
