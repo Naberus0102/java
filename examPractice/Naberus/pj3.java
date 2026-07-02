@@ -1,4 +1,4 @@
-package examPractice;
+package examPractice.Naberus;
 import java.util.Scanner;
 public class pj3 {
     public static void main(String[] args) {
