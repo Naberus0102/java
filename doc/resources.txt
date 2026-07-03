@@ -1,0 +1,75 @@
+https://www.youtube.com/watch?v=7L0RLrfrBHE&t=4295s
+
+Lập trình hướng đối tượng (OOP) (3:55:44 - 5:36:50):
+
+    Khái niệm Class và Object.
+    Thuộc tính (Attributes) và Phương thức (Methods).
+    Hàm tạo (Constructor) và từ khóa this.
+    Access Modifiers (public, private, protected).
+    Tính đóng gói (Encapsulation).
+
+Cấu trúc dữ liệu và Xử lý chuỗi (5:36:50 - 7:24:49):
+
+    Non-primitive data types, Autoboxing/Unboxing.
+    ArrayList và Generics cơ bản.
+    Xử lý chuỗi (String) và biểu thức chính quy (Regular Expression).
+
+Kế thừa và Đa hình (7:24:49 - 8:42:08):
+
+    Tính kế thừa (Inheritance) và từ khóa super.
+    Lớp trừu tượng (Abstract Class).
+    Tính đa hình (Polymorphism) và Interface (bao gồm cả các tính năng mới của Java 8).
+
+Xử lý ngoại lệ và nâng cao (8:42:08 - 10:31:07):
+
+    Quản lý gói (Package) và xử lý ngoại lệ (Try...catch, finally, Throw/Throws).
+    Java IO (Stream) để đọc/ghi file và lớp Path.
+    Lập trình đa luồng (Processes and Threads).
+---------------------------------------------------------------------------------------------------------------------------
+https://www.youtube.com/watch?v=X7pGCmVxx10
+
+Thiết lập nền tảng (1:24 - 5:59): 
+        Sử dụng Spring Initializer (1:37 - 2:31): Truy cập công cụ Spring Initializer để cấu hình dự án:
+
+            Chọn Maven làm công cụ xây dựng (Build tool).
+            Chọn phiên bản Java tương thích.
+            Thêm các thư viện (dependencies) thiết yếu cho ứng dụng:
+                Lombok: Giúp giảm thiểu mã nguồn lặp lại (boilerplate code).
+                Spring Web: Cung cấp hạ tầng để phát triển ứng dụng web.
+                Spring Security: Xử lý xác thực và phân quyền người dùng.
+                PostgreSQL Driver: Kết nối với cơ sở dữ liệu PostgreSQL.
+                Spring Data JPA: Đơn giản hóa việc tương tác với dữ liệu thông qua Hibernate.
+                Java Mail Sender: (Tùy chọn) Hỗ trợ gửi email thông báo.
+
+        Khởi tạo và cấu hình dự án (2:32 - 4:21):
+
+            Tải về file zip, giải nén và mở dự án bằng trình chỉnh sửa code (như VS Code).
+            Cấu trúc thư mục cốt lõi nằm trong src/main/resources.
+            Định nghĩa các cấu hình tại file application.properties (hoặc application.yml). Trong bước này, người dùng được hướng dẫn cách bật thông báo lỗi chi tiết (server.error.include-message) để dễ dàng debug.
+
+        Thiết lập kết nối cơ sở dữ liệu (4:22 - 5:59):
+
+            Cấu hình tham số kết nối tới PostgreSQL bao gồm: URL (đường dẫn tới database), Username và Password.
+            Thiết lập spring.jpa.hibernate.ddl-auto thành create-drop (lưu ý: chỉ nên dùng trong môi trường phát triển để tự động tạo/xóa bảng dữ liệu khi khởi chạy ứng dụng).
+
+Cấu hình cơ sở dữ liệu (6:02 - 7:16): 
+    Thiết lập kết nối với PostgreSQL và tạo database tên là 'registration'.
+
+Bảo mật với Spring Security (8:09 - 14:11): 
+    Cấu hình để cho phép truy cập vào trang đăng ký mà không cần xác thực, 
+    đồng thời sử dụng trang đăng nhập tùy chỉnh thay vì trang mặc định của Spring Security.
+
+Xây dựng mô hình dữ liệu (14:12 - 16:16): 
+    Tạo class MyAppUser với chú thích @Entity để ánh xạ tới bảng trong cơ sở dữ liệu.
+
+Xử lý logic xác thực (16:18 - 20:31): 
+    Thiết lập UserRepository và UserService (kế thừa UserDetailsService) 
+    để kết nối hệ thống với database trong quá trình đăng nhập.
+
+Hoàn thiện tính năng (20:32 - 24:46): 
+    Xây dựng RegistrationController để xử lý yêu cầu đăng ký bằng JSON, 
+    thực hiện mã hóa mật khẩu bằng BCrypt để bảo mật thông tin người dùng.
+
+Giao diện người dùng và kiểm thử (24:47 - 28:55): 
+    Tạo trang chủ (index), 
+    thiết lập xử lý lỗi 404 tùy chỉnh và kiểm thử luồng đăng ký/đăng nhập hoàn chỉnh từ đầu đến cuối.
