@@ -7,6 +7,7 @@ public class student {
     int mathScore;
     int scienceScore;
     int englishScore;
+    
     //method of the student class
     public void learnJava() {
         System.out.println(name + " is learning Java.");
