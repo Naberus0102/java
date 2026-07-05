@@ -1,0 +1,5 @@
+private/public/protected
+- private: dùng nội bộ class
+- public: công khai hoàn toàn 
+- default: là public đối với class trong cùng package, private khi khác package
+- protected: được sử dụng với lớp cha/con (inheritage)
