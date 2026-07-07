@@ -1,6 +1,6 @@
 package examPractice.Naberus.OOP.lab04;
 import java.util.Scanner;
-public class main {
+public class Main {
     public static void main(String[] args) {
         //input
         Scanner scanner = new Scanner(System.in);
